@@ -391,6 +391,10 @@
         
         [self makePanelVisibleAtIndex:self.visiblePageIndex];
     }
+    
+    if ([(id)self.delegate respondsToSelector:@selector(intro:scrollViewDidScroll:)]) {
+        [self.delegate intro:self scrollViewDidScroll:scrollView];
+    }
 }
 
 float easeOutValue(float value) {

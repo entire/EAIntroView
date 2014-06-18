@@ -20,6 +20,7 @@ enum EAIntroViewTags {
 - (void)intro:(EAIntroView *)introView pageAppeared:(EAIntroPage *)page withIndex:(NSInteger)pageIndex;
 - (void)intro:(EAIntroView *)introView pageStartScrolling:(EAIntroPage *)page withIndex:(NSInteger)pageIndex;
 - (void)intro:(EAIntroView *)introView pageEndScrolling:(EAIntroPage *)page withIndex:(NSInteger)pageIndex;
+- (void)intro:(EAIntroView *)introView scrollViewDidScroll:(UIScrollView *)scrollView;
 @end
 
 @interface EAIntroView : UIView <UIScrollViewDelegate>
